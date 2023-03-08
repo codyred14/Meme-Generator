@@ -1,0 +1,102 @@
+body {
+  background-color: rgb(216, 112, 147);
+}
+
+h1 {
+  width: 500px; 
+  margin: auto; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(0, 255, 242), 0 0 1em rgb(255, 242, 0);
+  padding: 1em;
+  font-size: 5em;
+  font-family: 'AmaticSCBold';
+  font-weight: bold;
+  font-style: normal;
+}
+
+form {
+  width: 500px; 
+  margin: auto; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  font-weight: bold;
+}
+
+input {
+  background-color: rgb(0, 255, 255);
+}
+
+input[type="color"] {
+  border: none;
+  background-color: rgb(216, 112, 147);
+}
+
+button {
+  font-weight: bold;
+  border: solid;
+  border-radius: 10px;
+  background-color: rgb(0, 255, 255);
+}
+
+button:hover {
+  background-color: rgb(255, 242, 0);
+}
+
+.meme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.meme img {
+  width: 300px;
+  height: auto;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.meme .top-text,
+.meme .bottom-text {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  width: 95%;
+  left: 0;
+  right: 0;
+  overflow-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  max-width: none;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+
+.meme .top-text {
+  top: 0;
+}
+
+.meme .bottom-text {
+  bottom: 20px;
+}
+
+.meme .remove-button {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}

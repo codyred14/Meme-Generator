@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/amatic-sc" type="text/css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Meme Generator</title>
+</head>
+<body>
+    <h1>Meme Generator</h1>
+    <form id="meme-form">
+        <label for="image-url">Image URL:</label>
+        <input type="text" id="image-url" name="image-url" required>
+        <br>
+        <label for="top-text">Top Text:</label>
+        <input type="text" maxlength="50 id="top-text" name="top-text" required> 
+        <br>
+        <label for="bottom-text">Bottom Text:</label>
+        <input type="text" maxlength="50" id="bottom-text" name="bottom-text" required>
+        <br>
+        <label for="text-size">Text Size:</label>
+        <input type="range" min="10" max="20" value="15" class="text-size" id="text-size">
+        <br>
+        <label for="text-color">Text Color:</label>
+        <input type="color" value="#ffffff" class="text-color" id="text-color">
+        <br>
+        <button type="submit">Generate Meme</button>
+    </form>
+      
+      <!-- HTML for the container that will hold the generated memes -->
+      <div id="meme-container"></div>
+      
+    <script src="app.js"></script>
+</body>
+</html>
